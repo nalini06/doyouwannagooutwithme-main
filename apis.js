@@ -4,7 +4,7 @@ function sendRequestAndNavigate() {
     // audio.play();
 
     // Send a request to the server
-    fetch('http://localhost:3000/api/yes', {
+    fetch('https://back-end-tnwu.onrender.com/api/yes', {
         method: 'GET', // or 'POST' depending on your server's endpoint
         headers: {
             'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ function moveButton() {
     var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
     document.getElementById('noButton').style.left = `${x}px`;
     document.getElementById('noButton').style.top = `${y}px`;
-    fetch('http://localhost:3000/api/no', {
+    fetch('https://back-end-tnwu.onrender.com/api/no', {
         method: 'GET', // or 'POST' depending on your server's endpoint
         headers: {
             'Content-Type': 'application/json',
